@@ -2,6 +2,7 @@
 
 :root{
     --primary-color : rgb(68, 196, 189);
+    --secundary-color: rgb(90,90,255);
 }
 
 *{
@@ -103,14 +104,41 @@ margin-left: 32px;
     padding: 32px;
 }
 
+.details h3{
+    margin-bottom: 8px;
+}
+
 .details .item {
     border-top: 1px solid rgba(0,0 ,0, 0.1);
     padding: 8px 0;
+
 }
 
+.details .item div:nth-child(2){
+    font-size: 16px;
+    color: #777;
+    font-weight: normal;
+}
 
 .details .item:first-child {
     border:none;
     
 }
+
+
+
+.details .item span{
+    padding: 8px 16px;
+    background-color:var(--secundary-color) ;
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
 
