@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="cardCreate">
+
+        <form method="POST" action="/teachers" class="details">
+            <h3>Cadastrar Professor</h3>
+            <div class="item">
+                <div>Url do avatar</div>
+                <div>
+                    <input type="text" name="url_avatar" placeholder="http://">
+                </div>
+            </div>
+                <div class="item">
+                    <div>Nome do Professor</div>
+                    <div>
+                        <input type="text" name="name" placeholder="Nome">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Data de Nascimento</div>
+                    <div>
+                        <input type="date" name="birth">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Escolaridade</div>
+                    <div>
+                        <select name="schooling">
+                            <option value="medio">Ensino Médio</option>
+                            <option value="superior">Superior Completo</option>
+                            <option value="mestrado">Mestrado</option>
+                            <option value="doutorado">Doutorado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Tipo de aula</div>
+                    <div>
+                        <span><input type="radio" name="schoolType" value="P">Presencial</span>
+                        <span><input type="radio" name="schoolType" value="E">EAD</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Disciplina Acompanhada</div>
+                    <div>
+                        <input type="text" name="disciplina" placeholder="Ex: Matemática, Física...">
+                    </div>
+                </div>
+                
+                    <button type="submit">Enviar</button>
+                    
+
+            </form>
+        </div>
+    {% endblock content %}

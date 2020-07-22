@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "url_avatar": "http://google.com/clouder",
+      "name": "parabens",
+      "birth": 1558051200000,
+      "schooling": "mestrado",
+      "schoolType": "P",
+      "disciplina": "Física",
+      "created_at": 1595042081874
+    },
+    {
+      "id": 2,
+      "url_avatar": "http://google.com/clouder",
+      "name": "deora",
+      "birth": 926985600000,
+      "schooling": "medio",
+      "schoolType": "E",
+      "disciplina": "Física",
+      "created_at": 1595267535678
+    }
+  ]
+}
