@@ -1,0 +1,61 @@
+<div class="item">
+                <div>Url do avatar</div>
+                <div>
+                    <input type="text" name="url_avatar" placeholder="http://" value="{{teacher.url_avatar}}">
+                </div>
+            </div>
+                <div class="item">
+                    <div>Nome do Professor</div>
+                    <div>
+                        <input type="text" name="name" placeholder="Nome" value="{{teacher.name}}">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Data de Nascimento</div>
+                    <div>
+                        <input type="date" name="birth" value="{{teacher.age}}">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Escolaridade</div>
+                    <div>
+                        <select name="schooling">
+                            <option value="medio"  
+                           {% if teacher.schooling == "medio" %}
+                           selected="selected"
+                           {% endif %}
+                            >Ensino Médio</option>
+                            <option value="superior"
+                            {% if teacher.schooling == "superior" %}
+                           selected="selected"
+                           {% endif %}
+                            >Superior Completo</option>
+                            <option value="mestrado"
+                            {% if teacher.schooling == "mestrado" %}
+                           selected="selected"
+                           {% endif %}
+                            >Mestrado</option>
+                            <option value="doutorado"
+                            {% if teacher.schooling == "doutorado" %}
+                           selected="selected"
+                           {% endif %}
+                            >Doutorado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Tipo de aula</div>
+                    <div>
+                        <span><input type="radio" name="schoolType" value="PESENCIAL">Presencial</span>
+                        <span><input type="radio" name="schoolType" value="EAD">EAD</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Disciplina Acompanhada</div>
+                    <div>
+                        <input type="text" name="disciplina" placeholder="Ex: Matemática, Física...">
+                    </div>
+                </div>
+                
+                    <button type="submit">Enviar</button>
+                    
