@@ -49,6 +49,16 @@
       "schoolType": "EAD",
       "disciplina": "Designer, Mobile",
       "created_at": 1600459320083
+    },
+    {
+      "id": 6,
+      "url_avatar": "https://google.com.br/123321123321asbvas",
+      "name": "jenifer",
+      "birth": 660268800000,
+      "schooling": "doutorado",
+      "schoolType": "EAD",
+      "disciplina": "Educação física",
+      "created_at": 1600973955891
     }
   ]
 }
