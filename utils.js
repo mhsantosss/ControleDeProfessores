@@ -21,7 +21,7 @@ module.exports = {
     const day = `0${date.getUTCDate()}`.slice(-2)
 
 
-    return `${day}-${month}-${year}`
+    return `${year}-${month}-${day}`
   },
 
   split: function split(disciplina) {
@@ -30,9 +30,11 @@ module.exports = {
   },
 
   graduation: function (graduation) {
-    let educationLevel 
+
 
     switch (graduation) {
+      
+
       case "medio":
         educationLevel = "medio"
 
@@ -52,11 +54,11 @@ module.exports = {
 
       default:
         break;
-
-
+     
+      
     };
 
-   
+   return educationLevel;
   }
 
 }

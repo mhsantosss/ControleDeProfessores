@@ -56,9 +56,9 @@ exports.show = function(req,res){
         ...foundTeachers,
         age: age(foundTeachers.birth),
         disciplina: split(foundTeachers.disciplina),
-        created_at:date(foundTeachers.created_at),
+        created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeachers.created_at),
         schooling: graduation(foundTeachers.schooling)
-
+        
     }
     
     return res.render("teachers/show", { teacher })
@@ -76,12 +76,8 @@ exports.edit = function( req,res ){
 
     const teacher = {
         ...foundTeachers,
-        age: age(foundTeachers.birth),
-        disciplina: split(foundTeachers.disciplina),
-        created_at:date(foundTeachers.created_at),
-        schooling: graduation(foundTeachers.schooling)
-
+        birth:  date(foundTeachers.birth)
     }
-
+    
     return res.render("teachers/edit", { teacher })
 }
