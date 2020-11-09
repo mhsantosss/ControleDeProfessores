@@ -187,16 +187,29 @@ input[type="radio"]{
 }
 
 
-button{
+.details button, .button{
     background-color: var(--secundary-color);
     font-size: 16px;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    padding: 16px 32px;
+    padding: 16px 64px;
     border-radius: 64px;
+    
 
     
+}
+
+
+.details .button {
+    padding: 10px 32px;
+}
+#form-delete button{
+    margin-top: 8px;
+    background-color: crimson;
+}
+#form-delete button:hover{
+    background-color: rgba(247, 3, 3, 0.648);
 }
 button:hover{
     
@@ -205,10 +218,10 @@ button:hover{
 }
 @keyframes rotation {
     from{
-        transform: translateX(16px);
+        transform: translateX(12px);
     }   
     to{
-        border-radius: 0 64px 0 64px;
+        border-radius: 12px 12px 12px 12px;
           
     }
 }

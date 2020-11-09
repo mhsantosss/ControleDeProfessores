@@ -3,9 +3,17 @@
 {% block content %}
     <div class="cardCreate">
 
-        <form method="POST" action="/teachers" class="details">
-            <h3>Editar Professor</h3>
-            {% include "teachers/fields.njk" %}
+        <div class="details">
+            <form method="POST" action="/teachers?_method=PUT">
+                <h3>Editar Professor</h3>
+                {% include "teachers/fields.njk" %}
+                <button type="submit" class="button">Enviar</button>
+            </form>
+            <form id="form-delete" action="/teachers?_method=delete" method="post">
+                <input type="hidden" name="id" value={{teacher.id}}>
+                <button type="submit" class="button" >Deletar</button>
             </form>
         </div>
-    {% endblock content %}
+
+    </div>
+{% endblock content %}
